@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      var l = 1;
+      var q = 2;
+      var w = '';
+      var res = (++l+l++)-3* (q++-++q)-q++;
+         res = (++1+l++)-3* (q++-++q)-q++;
+         res = (2+2++)-3* (q++-++q)-q++;
+         res = (4)-3* (q++-++q)-q++;   // 2++===> l = 3 
+         res = 4-3* (2++-++q)-q++;   // 2++===> l = 3 
+         res = 4-3* (2-++3)-q++;   // q =3
+         res = 4-3* (2-4)-q++;   // q =4
+         res = 4-3* (2-4)-4++;   // q =4
+         res = 4-3* (-2)-4++;   // q =4
+         res = 4-(-6)-4++;   // q =4
+         res = 10 -4++;   // q =4
+         res = 6 // q=5
+        
+
+    </script>
+</body>
+</html>

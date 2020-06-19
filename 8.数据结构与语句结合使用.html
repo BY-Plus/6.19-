@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var students = [
+        //     {name:'ya',age:'11'},
+        //     {name:'ya1',age:'12'},
+        //     {name:'ya2',age:'13'},
+        //     {name:'ya3',age:'14'},
+        //     {name:'ya4',age:'15'}
+        // ]
+        // console.log('')
+
+
+        var teacher = [
+            {name:'ya',dec:'男',age:12},
+            {name:'ya1',dec:'男1',age:19},
+            {name:'ya2',dec:'男2',age:20},
+            {name:'ya3',dec:'男3',age:21}
+
+        ];
+        document.write("<h1>姓名   :"+teacher[0].name+'.描述:')
+
+      
+
+
+        //在终端页面输出,简易写法
+        // document.write(
+        //     `<h1>姓名:${teacher[i].name},描述:${teacher[i].dec}</h1>`
+        // );
+        
+
+
+      //在终端输出
+    //    for (var a =0;0<teacher.length;a++){
+    //        console.log("姓名:     ",tearcher[a].dec)
+    //    }
+    
+    //页面显示 年龄大于等于18的老师，终端输出
+    for (var i =0;i<teacher.length;i++){
+        if(teacher[i].age<18){
+        console.log(teacher[i].name,teacher[i].dec,teacher[i].age)
+       
+    }
+    }
+     //     document.write(
+        //         `<h1>姓名:${teacher[i].name},描述:${teacher[i].dec}</h1>`
+        //     );
+        // }
+        // console.log("姓名:     ",tearcher[i].dec,teacher[i].name,"年龄:     ")
+
+
+    </script>
+</body>
+</html>
